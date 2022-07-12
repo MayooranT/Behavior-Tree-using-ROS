@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="MainTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="MainTree">
+        <Sequence>
+            <KeepRunningUntilFailure>
+                <Fallback>
+                    <KeepRunningUntilFailure>
+                        <Sequence>
+                            <Condition ID="BatteryCondition"/>
+                            <Sequence>
+                                <Action ID="MoveBase" goal="Goal_a"/>
+                                <Action ID="MoveBase" goal="Goal_b"/>
+                            </Sequence>
+                        </Sequence>
+                    </KeepRunningUntilFailure>
+                    <Inverter>
+                        <KeepRunningUntilFailure>
+                            <Sequence>
+                                <Action ID="MoveBase" goal="charging_dock"/>
+                                <Condition ID="BatteryCondition_charging"/>
+                            </Sequence>
+                        </KeepRunningUntilFailure>
+                    </Inverter>
+                </Fallback>
+            </KeepRunningUntilFailure>
+        </Sequence>
+    </BehaviorTree>
+
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Condition ID="BatteryCondition"/>
+        <Condition ID="BatteryCondition_charging"/>
+        <Action ID="MoveBase">
+            <input_port name="goal" type="Pose2D"/>
+        </Action>
+        <Action ID="SetGoal">
+            <output_port name="goal" type="Pose2D"/>
+            <input_port name="target" type="Pose2D"/>
+        </Action>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>
+
