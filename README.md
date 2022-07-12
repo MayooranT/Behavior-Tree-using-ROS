@@ -4,7 +4,6 @@
 
 This is a seperate workspace which will direct you to a seperate repository, where you will be able to implement a patrolling robot. Behavior tree (BT) is used to manage the flow in an intelligent manner. Groot is used to visualize the behavior tree. The terminal also prints the state of the BT by StdCoutLogger.
 
-[The link to the repository <---- Click here](https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree)
 
 ## 2. Required packages
 
