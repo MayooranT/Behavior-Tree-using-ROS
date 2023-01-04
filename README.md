@@ -73,7 +73,7 @@ You can also find the video file in the pictures directory.
 First, clone the files in the repository [The link to the repository](https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree) in a new workspace and compile it.
 
 ```
-git clone https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree.git
+git clone https://github.com/MayooranT/Behavior-Tree-using-ROS.git
 catkin_make
 source devel/setup.bash
 ```
