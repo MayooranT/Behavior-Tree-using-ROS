@@ -70,7 +70,7 @@ You can also find the video file in the pictures directory.
 
 ### 5.1. Getting started
 
-First, clone the files in the repository [The link to the repository](https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree) in a new workspace and compile it.
+First, clone the files in the repository [The link to the repository](https://github.com/MayooranT/Behavior-Tree-using-ROS.git) in a new workspace and compile it.
 
 ```
 git clone https://github.com/MayooranT/Behavior-Tree-using-ROS.git
@@ -79,7 +79,7 @@ source devel/setup.bash
 ```
 ### 5.2. Run your robot
 
-You can run any robot capable of handling ROS actions. In this example let's run a custom made robot. [Custom made robot](https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/alpha/alpha_navigation). (To Understand abou this particular robot, go through the README file in the repository)
+You can run any robot capable of handling ROS actions. In this example let's run a custom made robot. [Custom made robot](https://github.com/MayooranT/Alpha-robot.git). (To Understand abou this particular robot, go through the README file in the repository)
 
 After successfully implementing the robot, spawn it with RViz, Gazebo and AMCL. For your convenience, a single bash command will do the job!!!
 
@@ -89,10 +89,10 @@ After successfully implementing the robot, spawn it with RViz, Gazebo and AMCL. 
 
 ### 5.3. Clone the BT example
 
-Clone the repository and compile it. [The link to the repository](https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree)
+Clone the repository and compile it. [The link to the repository](https://github.com/MayooranT/Behavior-Tree-using-ROS.git)
 
 ```
-git clone https://gitlab.com/arimac-robotics/core-software/intern_projects/mayooran_entc18/behavior-tree.git
+git clone https://github.com/MayooranT/Behavior-Tree-using-ROS.git
 catkin_make
 source devel/setup.bash
 ```
